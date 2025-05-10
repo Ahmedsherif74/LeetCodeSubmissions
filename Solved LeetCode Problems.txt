@@ -1,0 +1,14 @@
+يلا بسم الله الرحمن الرحيم
+
+
+This is A quick Track of my Solved Problems in leetcode 
+
+Fomrmat : Number _ Problem Name _ Problem Link _ Date of submission _ Topic
+
+
+
+1_ContainsDuplicate217_10/5/2025_HashSet : https://leetcode.com/problems/contains-duplicate/
+
+2_isAnagram242_10/5/2025_Hashetables(Using arrays and alphapet)  : https://leetcode.com/problems/valid-anagram/
+
+
