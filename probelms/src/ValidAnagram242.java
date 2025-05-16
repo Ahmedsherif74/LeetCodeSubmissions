@@ -1,4 +1,6 @@
 public class ValidAnagram242 {
+
+
     public boolean isAnagram ( String s , String r) {
 
         if (s.length() != r.length()) {
