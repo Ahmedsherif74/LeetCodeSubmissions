@@ -7,18 +7,14 @@ public class twoSum1 {
         for (int i =0 ; i < nums.length; i++ ){
             values.put(nums[i] , i);
         }
-        for (int i=0 ; i<nums.length; i++){
+        for (gint i=0 ; i<nums.length; i++){
             int diff = target-nums[i];
             if(values.containsKey(diff)&&values.get(diff)!=i){
                 return new int[] {i,values.get(diff)};
             }
-
         }
-
         return  new int[0];
-
     }
-
     public static void main(String[] args) {
         twoSum1 checher = new twoSum1();
 
