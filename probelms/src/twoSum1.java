@@ -11,7 +11,6 @@ public class twoSum1 {
             int diff = target - nums[i];
             if (values.containsKey(diff) && values.get(diff)!=i) {
                 return new int[]{i, values.get(diff)};
-
             }
         }
         return new int[0];
