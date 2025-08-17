@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class ValidAnagram242 {
 
 
@@ -6,17 +8,19 @@ public class ValidAnagram242 {
         if (s.length() != r.length()) {
             return false;
         }
-        int[] count = new int[26];
-        for (int i = 0; i < s.length(); i++) {
-            count[s.charAt(i) - 'a']++;
-            count[r.charAt(i) - 'a']--;
+        HashMap<Character, Integer> mapS = new HashMap<>();
+        HashMap<Character, Integer> mapT = new HashMap<>();
+
+        for (int i =0 ; i<s.length(); i++){
+            char c = s.charAt(i);
+            mapS.put(c ,mapS.getOrDefault(c,0)+1);
         }
-        for (int value = 0; value < count.length; value++) {
-            if (count[value] != 0) {
-                return false;
-            }
+
+        for (int i =0 ; i<s.length(); i++){
+            char c = r.charAt(i);
+            mapT.put(c ,mapT.getOrDefault(c,0)+1);
         }
-        return true;
+        return  mapS.equals(mapT);
     }
 
     public static void main(String[] args) {
