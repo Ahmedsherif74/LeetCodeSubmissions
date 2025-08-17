@@ -13,8 +13,6 @@ public class ContainDuplicate217 {
         }
         return false;
     }
-
-
     public static void main(String[] args) {
         ContainDuplicate217 checker = new ContainDuplicate217();
         int[] test1 = {1, 2, 3, 4};           // No duplicates
